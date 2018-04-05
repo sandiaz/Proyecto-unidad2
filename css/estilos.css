@@ -1,34 +1,29 @@
-body {
-	font-family: Verdana;
-	width: 90%;
-	margin-left: 5%;
-	font-size: 18px;
-	color: blue;
-}
-
-#resumen{
-	display: none;
-}
-
 
 header {
-	padding: 1vh 1vw;
-	margin-bottom: 1vh;
+	width: 100%;
+	height: 50px;
 	background: #5b7989;
-	margin: margin-left;
-
-}
-
-#contenido{
-	margin: 1%;
-	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	top: 0;
+	margin: 0;
 }
 
 header h1 {
+	margin: margin-left;
 	padding-left: 1%;
+	padding-top: 1%;
 	font-size: 1.5em;
 	color: white;
-	text-shadow: 2px 2px 2px #0201a;
+	text-shadow: 2px 2px #02010a;
+}
+nav{
+	float: right;
+	position: absolute;
+	top:4.5vh;
+	right: 2vh;
+}
+nav a{
+	color:red;
 }
 
 footer {
