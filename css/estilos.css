@@ -20,10 +20,10 @@ nav{
 	float: right;
 	position: absolute;
 	top:4.5vh;
-	right: 2vh;
+	right: 3vh;
 }
 nav a{
-	color:red;
+	color:white;
 }
 
 footer {
