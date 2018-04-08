@@ -5,6 +5,7 @@
 
 html{
 		font-family: 'DancingScript';
+		background: black;
 }
 
 header {
@@ -14,7 +15,10 @@ header {
 	border-radius: 10px 10px 0px 0px;
 	top: 0;
 	margin: 0;
+	animation-duration: 3s;
+	animation-name: slidein;
 }
+
 
 header h1 {
 	margin: margin-left;
@@ -26,7 +30,7 @@ header h1 {
 }
 nav{
 	float: right;
-	position: absolute;
+	position:absolute;
 	top:4.5vh;
 	right: 3vh;
 }
@@ -53,6 +57,7 @@ footer {
 }
 
 #imgenPrincipal img{
+width: 70%;
 text-align: center;
 margin-left: 15%;
 margin-right: 15%;
@@ -107,6 +112,17 @@ section #paisaje img{
 		transform: translateX(20px);
 	}
 }
+@keyframes slidein {
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
 
 section #paisaje img:hover{
 animation: mirotacion 2s infinite;
@@ -144,6 +160,40 @@ img{
 #contenido{
 	width:100%;
 }
+
+#contenedor{
+	width: 100%;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	background-color: #d5c75f;
+}
+
+#imagen1{
+	padding: 15px;
+	-webkit-filter:blur(10px);
+}
+#imagen2{
+		padding: 15px;
+	-webkit-filter:grayscale(100%);
+}
+#imagen3{
+		padding: 15px;
+	-webkit-filter:sepia(100%);
+}
+#imagen4{
+		padding: 15px;
+-webkit-filter:grayscale(100%);
+}
+#imagen5{
+		padding: 15px;
+	-webkit-filter:sepia(50%);
+}
+#imagen6{
+		padding: 15px;
+-webkit-filter:grayscale(100%);
+}
+
 
 @media screen and (max-width:900px){
 	#contenedor{
@@ -184,6 +234,33 @@ img{
 		width: 100%;
 		top: 50px;
 		float: left;
+		text-align: center;
+	}
+	#contenedor{
+		width: 100%;
+	}
+	#imagen1{
+		width: 100%;
+		text-align: center;
+	}
+	#imagen2{
+		width: 100%;
+		text-align: center;
+	}
+	#imagen3{
+		width: 100%;
+		text-align: center;
+	}
+	#imagen4{
+		width: 100%;
+		text-align: center;
+	}
+	#imagen5{
+		width: 100%;
+		text-align: center;
+	}
+	#imagen6{
+		width: 100%;
 		text-align: center;
 	}
 }
